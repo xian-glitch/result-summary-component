@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+      
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+
+
+
+*{
+    font-family: 'Hanken Grotesk';
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    background-color: var(--Pale-blue);
+}
+
+h3{
+    margin-top: 40px;
+    color: var(--Light-lavender);
+    font-weight: 600;
+}
+
+.result{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.result-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: var(--White);
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.result-number p{
+    color: rgb(152, 152, 152);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result-number h1{
+    font-size: 60px;
+    color: var(--White);
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.description p{
+    width: 220px;
+    color: var(--Light-lavender);
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 400;
+}   
+
+.description{
+    text-align: center;
+    
+}
+
+.description h2{
+    color: var(--White);
+    margin-top: 10px;
+}
+
+/* summary start */
+
+.summary{
+    padding-left: 50px;
+    background-color: var(--White);
+    width: 350px;
+    border-radius: 20px;
+
+}
+
+.summary h2{
+    margin-top: 20px;
+}
+
+#concept{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+    display: flex;
+}
+
+
+
+#concept div{   
+    display: flex;
+}
+
+#concept p {
+    color: rgb(164, 164, 164);
+}
+
+.reaction div{
+    display: flex;
+    gap: 110px;
+}
+
+.reaction{
+    background-color: hsl(0, 70%, 95%);
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.reaction label{
+    color: var(--Light-red);
+}
+
+#concept label{
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+.memory{
+    background-color: hsl(39, 100%, 95%);
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.memory div{
+    gap: 110px;
+}
+
+.memory label{
+    color: var(--Orangey-yellow);
+}
+
+.verbal{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: hsl(165, 88%, 94%);
+}
+
+.verbal label{
+    color: var(--Green-teal);
+}
+
+.verbal div{
+    gap: 120px;
+}
+
+.visual{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color:hsl(236, 100%, 95%);
+}
+
+.visual label{
+    color: var(--Cobalt-blue);
+}
+
+.visual div{
+    gap: 120px;
+}
+
+button{
+    height: 50px;
+    width:250px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    border: 0;
+}
+
+button:active{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
